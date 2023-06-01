@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/imageDetail"
+        android:layout_width="500dp"
+        android:layout_height="550dp"
+        android:src="@drawable/imagedetail"
+        />
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_bacwhite" />
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-30dp"
+        android:gravity="center"
+        android:layout_below="@id/back"
+        android:fontFamily="@font/poppinssemi"
+        android:textColor="#fff"
+        android:textSize="22dp"
+        android:text="Detail buku" />
+
+    <ImageView
+        android:id="@+id/bookmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/back"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_bookmarkwhite" />
+
+    <ImageView
+        android:id="@+id/wave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-210dp"
+        android:src="@drawable/picwave" />
+
+    <TextView
+        android:id="@+id/judulBukuDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="310dp"
+        android:gravity="left"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/Title"
+        android:fontFamily="@font/poppins"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:text="Detail buku" />
+    <TextView
+        android:id="@+id/PenerbitText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judulBukuDetail"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Penerbit -"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/KodeDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PenerbitText"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Kode Buku - "
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/KodeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PenerbitText"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/KodeDetail"
+        android:fontFamily="@font/montserrat"
+        android:text="01"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/PenerbitDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judulBukuDetail"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/PenerbitText"
+        android:fontFamily="@font/montserrat"
+        android:text="Penerbit"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/BoxPembaca"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/KodeDetail"
+        android:paddingTop="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/poppinssemi"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:text="1200k"
+        android:textSize="30dp"
+        android:background="@drawable/radius_box"
+        android:elevation="5dp"
+        />
+
+    <TextView
+        android:id="@+id/Pembaca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BoxPembaca"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="-35dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Pembaca"
+        android:textColor="@color/grey"
+        android:textSize="15sp"
+        android:elevation="5dp"
+        />
+
+    <TextView
+        android:id="@+id/BoxRating"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/KodeDetail"
+        android:paddingTop="20dp"
+        android:layout_toRightOf="@+id/BoxPembaca"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/poppinssemi"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:text="8"
+        android:textSize="30dp"
+        android:background="@drawable/radius_box"
+        android:elevation="5dp"
+        />
+
+
+    <TextView
+        android:id="@+id/Rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Pembaca"
+        android:layout_below="@id/BoxPembaca"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="-35dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Rating /10"
+        android:textColor="@color/grey"
+        android:textSize="15sp"
+        android:elevation="5dp"
+        />
+
+    <TextView
+        android:id="@+id/Deskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Pembaca"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppinssemi"
+        android:text="Deskripsi "
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/DeskripsiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Deskripsi"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. L"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/HargaDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="left"
+        android:drawableLeft="@drawable/ic_coin"
+        android:layout_marginLeft="30dp"
+        android:drawablePadding="10dp"
+        android:layout_below="@id/DeskripsiText"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/accent2"
+        android:textSize="25dp"
+        android:text="Rp.00,00" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/radius_btnaksen"
+        android:fontFamily="@font/poppins"
+        android:text="Edit Data buku"
+        android:layout_below="@id/HargaDetail"
+        android:textColor="#fff"
+        android:elevation="5dp"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteblurred"
+    tools:context=".UpdateActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_back" />
+
+
+            <ImageView
+                android:id="@+id/bookmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/back"
+                android:layout_marginLeft="320dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_bookmark" />
+
+            <ImageView
+                android:id="@+id/pictop"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="-40dp"
+                android:layout_marginLeft="200dp"
+                android:src="@drawable/pictop" />
+            <ImageView
+                android:id="@+id/picleft"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/pichomeleft" />
+            <ImageView
+                android:id="@+id/picright"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="380dp"
+                android:src="@drawable/pichomeright" />
+
+            <EditText
+                android:id="@+id/NewformKode"
+                android:layout_below="@+id/back"
+                android:layout_width="110dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="30dp"
+                android:focusable="false"
+                android:paddingLeft="15dp"
+                android:background="@drawable/radius_formwhiteblur"
+                android:elevation="5dp"
+                android:inputType="textPersonName"
+                android:hint="Kd.Buku"
+                android:fontFamily="@font/montserrat"
+                android:textSize="14dp"
+                android:textColor="#000" />
+            <TextView
+                android:id="@+id/judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:fontFamily="@font/poppinssemi"
+                android:textColor="#000"
+                android:textSize="28dp"
+                android:text="Edit Data" />
+
+
+
+            <EditText
+                android:id="@+id/NewformJudul"
+                android:layout_below="@id/back"
+                android:layout_toRightOf="@+id/NewformKode"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:inputType="textPersonName"
+                android:hint="Judul Buku"
+                android:fontFamily="@font/montserrat"
+                android:textSize="14dp"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/NewformPenerbit"
+                android:layout_below="@+id/NewformJudul"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:inputType="textPersonName"
+                android:hint="Penerbit"
+                android:fontFamily="@font/montserrat"
+                android:textSize="14dp"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/NewformPembaca"
+                android:layout_below="@+id/NewformPenerbit"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:inputType="textPersonName"
+                android:hint="Total Pembaca"
+                android:fontFamily="@font/montserrat"
+                android:textSize="14dp"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/NewformRating"
+                android:layout_below="@id/NewformPenerbit"
+                android:layout_toRightOf="@+id/NewformPembaca"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:drawableRight="@drawable/ic_dwbten"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:inputType="numberDecimal"
+                android:hint="Rating Buku"
+                android:fontFamily="@font/montserrat"
+                android:textSize="14dp"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/NewformDeskripsi"
+                android:layout_below="@+id/NewformPembaca"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:inputType="textPersonName"
+                android:hint="Deskripsi"
+                android:fontFamily="@font/montserrat"
+                android:textSize="14dp"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/NewformHarga"
+                android:layout_below="@+id/NewformDeskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:inputType="textEmailAddress"
+                android:hint="Harga Buku"
+                android:fontFamily="@font/montserrat"
+                android:textSize="14dp"
+                android:textColor="#000" />
+
+
+            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                android:id="@+id/Newimage_profile"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@id/NewbtnOpen"
+                android:layout_below="@+id/NewformHarga"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_picimg"
+                />
+
+            <Button
+                android:id="@+id/NewbtnOpen"
+                android:layout_below="@+id/NewformHarga"
+                android:layout_width="245dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:paddingRight="15dp"
+                android:drawableRight="@drawable/ic_image"
+                android:textAllCaps="false"
+                android:layout_marginLeft="30dp"
+                android:alpha="0.90"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/radius_formwhite"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/grey"
+                android:text="Select Picture . . ." />
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_below="@+id/Newimage_profile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/radius_btnaksen"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/white"
+                android:text="UPDATE DATA BUKU" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

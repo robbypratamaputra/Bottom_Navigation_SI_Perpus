@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteblurred"
+    tools:context=".ListFragment">
+
+    <ImageView
+        android:id="@+id/pictop"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginLeft="200dp"
+        android:src="@drawable/pictop" />
+    <ImageView
+        android:id="@+id/picleft"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:src="@drawable/pichomeleft" />
+    <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_back" />
+    <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toRightOf="@+id/back"
+            android:layout_marginLeft="335dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_search" />
+    <ImageView
+            android:id="@+id/bookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/search"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_bookmark" />
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="left"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/back"
+        android:fontFamily="@font/poppins"
+        android:textColor="#000"
+        android:textSize="28dp"
+        android:text="List Buku Ku" />
+
+    <TextView
+        android:id="@+id/kategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/judul"
+        android:fontFamily="@font/poppinssemi"
+        android:textColor="@color/accent1"
+        android:textSize="12dp"
+        android:text="All" />
+    <TextView
+        android:id="@+id/kategori2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_toRightOf="@id/kategori"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/judul"
+        android:fontFamily="@font/poppinssemi"
+        android:textColor="@color/grey"
+        android:textSize="12dp"
+        android:text="Novel" />
+
+    <TextView
+        android:id="@+id/kategori3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/judul"
+        android:layout_toRightOf="@id/kategori2"
+        android:fontFamily="@font/poppinssemi"
+        android:textColor="@color/grey"
+        android:textSize="12dp"
+        android:text="Pendidikan" />
+    <TextView
+        android:id="@+id/kategori4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/kategori3"
+        android:layout_below="@id/judul"
+        android:fontFamily="@font/poppinssemi"
+        android:textColor="@color/grey"
+        android:textSize="12dp"
+        android:text="Biografi" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/kategori"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

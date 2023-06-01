@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_back" />
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-30dp"
+        android:gravity="center"
+        android:layout_below="@id/back"
+        android:fontFamily="@font/poppins"
+        android:textColor="#000"
+        android:textSize="22dp"
+        android:text="Profile" />
+    <ImageView
+        android:id="@+id/bookmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/back"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_bookmark" />
+    <ImageView
+        android:id="@+id/kotak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Title"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/picprofil" />
+
+    <TextView
+        android:id="@+id/judulBuku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="35dp"
+        android:layout_below="@id/Title"
+        android:fontFamily="@font/poppins"
+        android:textColor="#ffffff"
+        android:textSize="26dp"
+        android:text="Robby Pratama" />
+
+    <TextView
+        android:id="@+id/kategori3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:gravity="center"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@id/judulBuku"
+        android:fontFamily="@font/montserrat"
+        android:textColor="#fff"
+        android:textSize="12dp"
+        android:text="Sistem Informasi - Pemrograman Bergerak - Fakultas Teknik - Universitas Trunojoyo Madura" />
+
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:id="@+id/image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/Title"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="110dp"
+        android:src="@drawable/amir"
+        />
+
+        <TextView
+            android:id="@+id/BoxPembaca"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/image"
+            android:paddingTop="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="23dp"
+            android:fontFamily="@font/poppinssemi"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:text="6"
+            android:textSize="30dp"
+            android:background="@drawable/radius_box"
+            android:elevation="5dp"
+            />
+
+        <TextView
+            android:id="@+id/Pembaca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/BoxPembaca"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="-35dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Semester"
+            android:textColor="@color/grey"
+            android:textSize="15sp"
+            android:elevation="5dp"
+            />
+
+        <TextView
+            android:id="@+id/BoxRating"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/image"
+            android:paddingTop="20dp"
+            android:layout_toRightOf="@+id/BoxPembaca"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/poppinssemi"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:text="Praktikum"
+            android:textSize="20dp"
+            android:background="@drawable/radius_box"
+            android:elevation="5dp"
+            />
+
+        <TextView
+            android:id="@+id/Rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/Pembaca"
+            android:layout_below="@id/BoxPembaca"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="-35dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Pember"
+            android:textColor="@color/grey"
+            android:textSize="15sp"
+            android:elevation="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/picleft"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="420dp"
+            android:src="@drawable/pichomeleft" />
+
+        <TextView
+            android:id="@+id/Deskripsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="left"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@id/BoxRating"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/grey"
+            android:textSize="12dp"
+            android:text="Tugas ini dibuat untuk memenuhi Praktikum Modul 6" />
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

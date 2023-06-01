@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/picadd"
+        />
+    <TextView
+        android:id="@+id/Judul"
+        android:fontFamily="@font/poppins"
+        android:layout_toRightOf="@id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:text="Judul"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/PenerbitText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Judul"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/image"
+        android:fontFamily="@font/montserratthin"
+        android:text="Penerbit -"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/Penerbit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Judul"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/PenerbitText"
+        android:fontFamily="@font/montserrat"
+        android:text="Penerbit"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/Detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PenerbitText"
+        android:layout_marginLeft="200dp"
+        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/accent2"
+        android:layout_toRightOf="@id/image"
+        android:fontFamily="@font/montserratthin"
+        android:text="See Detail"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/KodeBuku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Penerbit"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/image"
+        android:fontFamily="@font/montserratthin"
+        android:text="Kode buku -"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/KodeBukuText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PenerbitText"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/KodeBuku"
+        android:fontFamily="@font/montserrat"
+        android:text="Kode"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/Harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/KodeBuku"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/accent2"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/image"
+        android:fontFamily="@font/poppinssemi"
+        android:text="Harga"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/whiteblurred"
+        app:srcCompat="@drawable/ic_delete"
+        tools:ignore="VectorDrawableCompat" />
+</RelativeLayout>
